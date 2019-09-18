@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                ./create_xabber_release
+                sh './create_xabber_release'
             }
         }
     }
