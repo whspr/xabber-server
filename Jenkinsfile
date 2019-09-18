@@ -4,7 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './create_xabber_release'
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
             }
         }
     }
